@@ -1,0 +1,7 @@
+outfitter aben_advanced
+	"G-82 Station"
+	"P-72 Safeguard"
+outfitter aben_basic
+	"E-18 Distributor"
+	"G-76 Plant"
+	"P-26 Screen"

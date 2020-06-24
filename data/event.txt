@@ -1,0 +1,6 @@
+event aben_technology_advanced
+	planet Nis
+		outfitter aben_advanced
+event aben_technology_basic
+	planet Nis
+		outfitter aben_basic

@@ -1,0 +1,36 @@
+outfit "E-18 Distributor"
+	"energy capacity" 1825
+	"outfit space" -9
+	category Power
+	cost 9820000
+	mass 9
+outfit "G-76 Plant"
+	"energy generation" 6.35
+	"heat generation" 28
+	"outfit space" -38
+	category Power
+	cost 31780000
+	mass 38
+outfit "G-82 Station"
+	"energy generation" 18.5
+	"heat generation" 69.5
+	"outfit space" -91
+	category Power
+	cost 65200000
+	mass 91
+outfit "P-26 Screen"
+	"outfit space" -13
+	"shield energy" .39
+	"shield generation" .37
+	"shield heat" .06
+	category Systems
+	cost 10270000
+	mass 13
+outfit "P-72 Safeguard"
+	"outfit space" -136
+	"shield energy" 5.35
+	"shield generation" 4.6
+	"shield heat" 1.15
+	category Systems
+	cost 26220000
+	mass 136

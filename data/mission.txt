@@ -1,0 +1,845 @@
+mission aben_contact
+	invisible
+	landing
+	on offer
+		conversation
+			`On the descent down into the crater, the great shimmering spire at the center of it all casts an intense glare in all directions. The beautiful sight of the city surrounding the spire puts you in awe, the buildings are all well maintained, with ease of access by air, or ground. The swarming layers of hover vehicles above it all is incredible, they must run autonomously as they all traverse the airspace fluidly and with very little room for error.`
+			`	The only active comms channel only offers repeating instructions on where to land depending on what classification you qualify, 14A for visiting parties. Upon landing your ship within the hangar, a party of four approach your ship, what appears at first glance to be naked human men. On closer inspection it's clear that these humanoids bear no obvious reproductive organs, and a flat stretch of skin where a nose would normally sit, additionally, none of these humanoids have any hair across their bodies.`
+			`	As they draw nearer you notice that the two adjacent to the center individual bear an unusual build, it seems they are wearing body armor designed to blend in with the others. The last appears to be female, or at least a separate breed of the species that is very slim, at least a head taller than the others and the ears stretch to a point, much like a mythical race from old earth legends. She holds an electronic device likely for keeping a transcript of the conversation, "Wonderful day isn't it sir, or ma'am of course." the spokesperson opens with, he sounds almost cautious when pronouncing.`
+			choice
+				`	"You know how to speak to me?"`
+				`	"How are we understanding each other"`
+			`	He plainly explains, as if it were procedure, "We have met travelers from your people before, they were kind to lend us multiple databases of text and literature in your native tongue." he tries to find a way to phrase as to not lead in circles, "We are a modest race, we can not rule over others or live in peace with the feeble tools we have. So to gain power as other great civilizations have, we adapt the tools of others for our use. Many oblige us with their favor, we have received a great many deliveries of new and exotic technology, and they of course get their return, we pay generously so that we may reach great heights in time."`
+			choice
+				`	"What do you mean travelers? You've met us before?"`
+				`	"Well I could see what I could find for you on my travels."`
+					goto register
+			`	"Yes, many cycles ago we were visited by your green skinned brethren; they frequently brought us what we desired so that we may finance their campaign, of which they did not share with us."`
+			choice
+				`	"You shouldn't trade with the Alphas! They betrayed us to control us, we barely fought them off!"`
+				`	"The Alphas are dangerous and you shouldn't trust them."`
+			`	"I apologize greatly for distressing you; but we had no way of knowing, any information about your kind they brought us had no mention of any recent war between the skins." he says, surprisingly sympathetic for you. He further explains, "They brought us much technology; more than we had hoped from them and we made discoveries far beyond what we had imagined."`
+			`	"We apologize greatly for placing your people in such danger, unfortunately we have no information about their whereabouts, for they arrived using technology that they explicitly refused to sell. They have long since disappeared and now provide us nothing, we have reached heights we previously thought impossible because of our partnership with the green skinned humans. If you are still willing, we would partner with you and help you, if you help us."`
+			choice
+				`	"I can see what I can bring back here."`
+					goto register
+				`	"I'm not sure I can do business with you."`
+					decline
+			label register
+			`	"That's very good news! I'll just need some more information for your record." He then proceeds to take an extraordinarily long time to go over the exact specifications of your ship and makes conversation about what lies outside of their space. Finally he looks to the scribe and then back, "We should have everything we need for the documents, now just to inform you of our operating procedure regarding brought technology."`
+			`	"As I had explained earlier, we pay very generously, for the right technology it could make you a very wealthy human. When you bring new technology to us to sell, we require a set of two of whatever technology you bring to us. Our engineers will spend some time looking over them to determine the value of the items to us and that will be the final price." he says, putting on a slightly sterner voice than before that you notice.`
+			`	He continues, rebounding back to his calm and predisposed manner of speaking; "Another kindness we allow is the freedom of choice. If you are not comfortable with the payment we offer you aren't made to accept it, you are free to decline the trade if you so wish." As he turns to walk away he hesitates, as if forgetting something important, "Oh of course I never told you my designation, I'm Saed, or at the very least it's the closest translation for humans." he then turns back and continues on his way out.`
+				accept
+	source
+		planet Nis
+mission aben_bounty
+	description `Hunt down a hostile ship that is circling overhead <planet>, then return to <planet> to receive your payment of <payment>.`
+	job
+	name `Unknown Assailant`
+	npc kill
+		dialog
+			`You have destroyed the assailant. You can now return to <planet> to collect your payment.`
+		fleet
+			cargo 2
+			names hai
+			variant
+				"Shield Beetle (Jump, Tracker)"
+		government "Hai (Unfettered)"
+		personality heroic marked target waiting
+	on complete
+		dialog
+			`Saed thanks you for your assistance in hunting down the aggressor, and hands you the agreed upon payment of <payment>.`
+		payment 160000
+	repeat
+	source
+		planet Nis
+	to offer
+		random < 60
+mission aben_mining_aluminum_large
+	description `The Aben are offering <payment> in exchange for 90 tons of aluminum.`
+	job
+	name `Harvest Aluminum`
+	on complete
+		dialog
+			`You unload the aluminum at the spaceport. Saed thanks you, and hands you <payment>.`
+		outfit Aluminum -90
+		payment 324000
+		trust_aben ++
+	repeat
+	source
+		planet Nis
+	to offer
+		has "aben_reconnaissance_1: done"
+		random < 20
+mission aben_mining_aluminum_small
+	description `The Aben are offering <payment> in exchange for 60 tons of aluminum.`
+	job
+	name `Harvest Aluminum`
+	on complete
+		dialog
+			`You unload the aluminum at the spaceport. Saed thanks you, and hands you <payment>.`
+		outfit Aluminum -60
+		payment 157500
+		trust_aben ++
+	repeat
+	source
+		planet Nis
+	to offer
+		has "aben_reconnaissance_1: done"
+		random < 30
+mission aben_mining_copper_large
+	description `The Aben are offering <payment> in exchange for 90 tons of copper.`
+	job
+	name `Harvest Copper`
+	on complete
+		dialog
+			`You unload the copper at the spaceport. Saed thanks you, and hands you <payment>.`
+		outfit Copper -90
+		payment 540000
+		trust_aben ++
+	repeat
+	source
+		planet Nis
+	to offer
+		has "aben_reconnaissance_1: done"
+		random < 20
+mission aben_mining_copper_small
+	description `The Aben are offering <payment> in exchange for 60 tons of copper.`
+	job
+	name `Harvest Copper`
+	on complete
+		dialog
+			`You unload the copper at the spaceport. Saed thanks you, and hands you <payment>.`
+		outfit Copper -60
+		payment 262500
+		trust_aben ++
+	repeat
+	source
+		planet Nis
+	to offer
+		has "aben_reconnaissance_1: done"
+		random < 30
+mission aben_mining_iron_large
+	description `The Aben are offering <payment> in exchange for 90 tons of iron.`
+	job
+	name `Harvest Iron`
+	on complete
+		dialog
+			`You unload the iron at the spaceport. Saed thanks you, and hands you <payment>.`
+		outfit Iron -90
+		payment 216000
+		trust_aben ++
+	repeat
+	source
+		planet Nis
+	to offer
+		has "aben_reconnaissance_1: done"
+		random < 20
+mission aben_mining_iron_small
+	description `The Aben are offering <payment> in exchange for 60 tons of iron.`
+	job
+	name `Harvest Iron`
+	on complete
+		dialog
+			`You unload the iron at the spaceport. Saed thanks you, and hands you <payment>.`
+		outfit Iron -60
+		payment 105000
+		trust_aben ++
+	repeat
+	source
+		planet Nis
+	to offer
+		has "aben_reconnaissance_1: done"
+		random < 30
+mission aben_mining_lead_large
+	description `The Aben are offering <payment> in exchange for 90 tons of lead.`
+	job
+	name `Harvest Lead`
+	on complete
+		dialog
+			`You unload the lead at the spaceport. Saed thanks you, and hands you <payment>.`
+		outfit Lead -90
+		payment 189000
+		trust_aben ++
+	repeat
+	source
+		planet Nis
+	to offer
+		has "aben_reconnaissance_1: done"
+		random < 20
+mission aben_mining_lead_small
+	description `The Aben are offering <payment> in exchange for 60 tons of lead.`
+	job
+	name `Harvest Lead`
+	on complete
+		dialog
+			`You unload the lead at the spaceport. Saed thanks you, and hands you <payment>.`
+		outfit Lead -60
+		payment 90000
+		trust_aben ++
+	repeat
+	source
+		planet Nis
+	to offer
+		has "aben_reconnaissance_1: done"
+		random < 30
+mission aben_mining_platinum_large
+	description `The Aben are offering <payment> in exchange for 90 tons of platinum.`
+	job
+	name `Harvest Platinum`
+	on complete
+		dialog
+			`You unload the platinum at the spaceport. Saed thanks you, and hands you <payment>.`
+		outfit Platinum -90
+		payment 3200000
+		trust_aben ++
+	repeat
+	source
+		planet Nis
+	to offer
+		has "aben_reconnaissance_1: done"
+		random < 5
+mission aben_mining_platinum_small
+	description `The Aben are offering <payment> in exchange for 60 tons of platinum.`
+	job
+	name `Harvest Platinum`
+	on complete
+		dialog
+			`You unload the platinum at the spaceport. Saed thanks you, and hands you <payment>.`
+		outfit Platinum -60
+		payment 1500000
+		trust_aben ++
+	repeat
+	source
+		planet Nis
+	to offer
+		has "aben_reconnaissance_1: done"
+		random < 10
+mission aben_mining_silicon_large
+	description `The Aben are offering <payment> in exchange for 90 tons of silicon.`
+	job
+	name `Harvest Silicon`
+	on complete
+		dialog
+			`You unload the silicon at the spaceport. Saed thanks you, and hands you <payment>.`
+		outfit Silicon -90
+		payment 128000
+		trust_aben ++
+	repeat
+	source
+		planet Nis
+	to offer
+		has "aben_reconnaissance_1: done"
+		random < 20
+mission aben_mining_silicon_small
+	description `The Aben are offering <payment> in exchange for 60 tons of silicon.`
+	job
+	name `Harvest Silicon`
+	on complete
+		dialog
+			`You unload the silicon at the spaceport. Saed thanks you, and hands you <payment>.`
+		outfit Silicon -60
+		payment 60000
+		trust_aben ++
+	repeat
+	source
+		planet Nis
+	to offer
+		has "aben_reconnaissance_1: done"
+		random < 30
+mission aben_mining_silver_large
+	description `The Aben are offering <payment> in exchange for 90 tons of silver.`
+	job
+	name `Harvest Silver`
+	on complete
+		dialog
+			`You unload the silver at the spaceport. Saed thanks you, and hands you <payment>.`
+		outfit Silver -90
+		payment 960000
+		trust_aben ++
+	repeat
+	source
+		planet Nis
+	to offer
+		has "aben_reconnaissance_1: done"
+		random < 10
+mission aben_mining_silver_small
+	description `The Aben are offering <payment> in exchange for 60 tons of silver.`
+	job
+	name `Harvest Silver`
+	on complete
+		dialog
+			`You unload the silver at the spaceport. Saed thanks you, and hands you <payment>.`
+		outfit Silver -60
+		payment 450000
+		trust_aben ++
+	repeat
+	source
+		planet Nis
+	to offer
+		has "aben_reconnaissance_1: done"
+		random < 20
+mission aben_mining_uranium_large
+	description `The Aben are offering <payment> in exchange for 90 tons of uranium.`
+	job
+	name `Harvest Uranium`
+	on complete
+		dialog
+			`You unload the uranium at the spaceport. Saed thanks you, and hands you <payment>.`
+		outfit Uranium -90
+		payment 1600000
+		trust_aben ++
+	repeat
+	source
+		planet Nis
+	to offer
+		has "aben_reconnaissance_1: done"
+		random < 5
+mission aben_mining_uranium_small
+	description `The Aben are offering <payment> in exchange for 60 tons of uranium.`
+	job
+	name `Harvest Uranium`
+	on complete
+		dialog
+			`You unload the uranium at the spaceport. Saed thanks you, and hands you <payment>.`
+		outfit Uranium -60
+		payment 750000
+		trust_aben ++
+	repeat
+	source
+		planet Nis
+	to offer
+		has "aben_reconnaissance_1: done"
+		random < 10
+mission aben_reconnaissance_1
+	on complete
+		conversation
+			`Upon landing there he is already, Saed, and with the scribe by his side. He is obviously adamant to hear all about your assignment. "I see you've returned, does this mean that you've completed what we've asked of you?"`
+			`	"I have, and I hope this can help answer any questions you have." you hand a data chip over and he spends some time attempting to interface it with his projector but finally he succeeds. As the projection of the map flickers on you notice that Aben space is already highlighted in a faint neon blue. "So here is our space, you were already provided with this knowledge, and this.." he draws his finger towards Hai space, which you have filled in on the map, "That's the Hai, they are peaceful for the most part. However forced to maintain a heavy military presence to hold back the warlike Hai at their border system." you interrupt, however he does not seem phased by the interruption so much as he is intrigued by the Hai. "This is exciting, I'd require your in-depth report of your findings about these Hai, and what else surrounds us." he follows up with questions on the rest of your findings, however phased by your description of the scarred and brown hulks towards the galactic core.`
+			`	"Thank you greatly for your efforts, these Hai leave me optimistic of a future of peace but those soulless vessels on the other side of us worry me." you reassure him that those drones don't have the ability to travel beyond hyperspace links. He transfers to you a surprisingly large sum of <payment> and assures you that you're now cleared access to their technology.`
+		payment 2600000
+		set "license: Aben Technology"
+		trust_aben += 5
+	on offer
+		conversation
+			`On return to the hangar to leave, you are confronted by a pair of figures waiting beside your ship, Saed and the scribe that accompanies him. He seems relieved when you show up, who knows how long they've been waiting for you. He walks up to meet you half way, and says "Hello captain <last>, would you be interested in helping the aben on a more formal assignment? It would be merely a reconnaissance task."`
+			choice
+				`	"What sort of reconnaissance do you need from me?"`
+					goto where
+				`	"Sorry, I'm really busy right now."`
+					defer
+			label where
+			`	He proceeds slowly, "Those that we have done business with, those that grace us with foreign technology, they have seldom ever talked of what lies beyond the confines of our space. We previously disregarded it, as we did not care to get involved in the affairs of other government, something that may have happened if we somehow ventured beyond. We now see that it is foolish to remain blind to what dangers lurk out of sight, for we may not know to prepare for an enemy we do not anticipate."`
+			`	"We have organized for all files that detail Aben space to be provided to you, additionally we have limited information regarding those systems that lie out of our reach." he explains.`
+			`	He pulls out a hologram projector showing a summary of what space the Aben have documented; with additional display modes for detailing the currency of the data shown, and estimated distances between star systems and planetary bodies, along with various other display modes. He then highlights the areas that they are interested in collecting data for, "We require basic scans of the systems closest to our space, and records of system traffic. We are hoping above all else that you are able to provide us any information about any inhabitants of the connected space."`
+				accept
+	name `Aben Reconnaissance`
+	source
+		planet Nis
+	to complete
+		has "Discovered Hai Space: offered"
+	to offer
+		has "aben_contact: done"
+	waypoint "Bore Fah"
+	waypoint "Hi Yahr"
+	waypoint Asikafarnut
+	waypoint Celeborim
+mission aben_retrieval_battery_module_large
+	invisible
+	on offer
+		require "Large Battery Module"
+		conversation
+			`You remember being told that the Aben are interested in buying exotic technology. Would you like to offer them your battery modules?`
+			choice
+				`	(Not now.)`
+					defer
+				`	(Yes.)`
+			`	As soon as you step off your ship you are greeted by Saed and a scribe, "Greetings again, captain. Is there anything we are able to assist you with today?", you explain that you have some technology for offer and he motions to the engineers, while the rest carry on refueling your ship one walks up to Saed.`
+			`	Saed explains the situation to the engineer and he walks on back to his team which are now done refueling to explain to them the situation. They all walk on back and you guide them to your cargo hold to unload the modules. While they are working to unload them, Saed strikes up conversation on these 'modules' and you do your best to explain that they come from a species that compact many of their technologies into modules that they can install multiple of.`
+			`	After the engineers unload the modules, they run multiple scans on both pieces and begin to examine them as best they could without disassembling them. One of them makes their way to Saed after some time and says something to him that you can't understand. "Taking into account everything you have told us, and what we have found by examining it, we can offer you 741000 credits, is this an acceptable offer?"`
+			choice
+				`	"Yes, it is."`
+					accept
+				`	"I can't accept that."`
+					defer
+	priority
+	source
+		planet Nis
+	to offer
+		has "aben_contact: done"
+		not	"aben_retrieval_battery_module_small: offered"
+	on accept
+		outfit "Large Battery Module" -2
+		payment 741000
+		trust_aben += 2
+mission aben_retrieval_battery_module_small
+	invisible
+	minor
+	on offer
+		require "Small Battery Module"
+		conversation
+			`You remember being told that the Aben are interested in buying exotic technology. Would you like to offer them your battery modules?`
+			choice
+				`	(Not now.)`
+					defer
+				`	(Yes.)`
+			`	As soon as you step off your ship you are greeted by Saed and a scribe, "Greetings again, captain. Is there anything we are able to assist you with today?", you explain that you have some technology for offer and he motions to the engineers, while the rest carry on refueling your ship one walks up to Saed.`
+			`	Saed explains the situation to the engineer and he walks on back to his team which are now done refueling to explain to them the situation. They all walk on back and you guide them to your cargo hold to unload the modules. While they are working to unload them, Saed strikes up conversation on these 'modules' and you do your best to explain that they come from a species that compact many of their technologies into modules that they can install multiple of.`
+			`	After the engineers unload the modules, they run multiple scans on both pieces and begin to examine them as best they could without disassembling them. One of them makes their way to Saed after some time and says something to him that you can't understand. "Taking into account everything you have told us, and what we have found by examining it, we can offer you 512000 credits, is this an acceptable offer?"`
+			choice
+				`	"Yes, it is."`
+					accept
+				`	"I can't accept that."`
+					defer
+	source
+		planet Nis
+	to offer
+		has "aben_contact: done"
+		not	"aben_retrieval_battery_module_large: offered"
+	on accept
+		outfit "Small Battery Module" -2
+		payment 512000
+		trust_aben ++
+mission aben_retrieval_collector_module_large
+	invisible
+	on offer
+		require "Large Collector Module"
+		conversation
+			`You remember being told that the Aben are interested in buying exotic technology. Would you like to offer them your collector modules?`
+			choice
+				`	(Not now.)`
+					defer
+				`	(Yes.)`
+			`	As soon as you step off your ship you are greeted by Saed and a scribe, "Greetings again, captain. Is there anything we are able to assist you with today?", you explain that you have some technology for offer and he motions to the engineers, while the rest carry on refueling your ship one walks up to Saed.`
+			`	Saed explains the situation to the engineer and he walks on back to his team which are now done refueling to explain to them the situation. They all walk on back and you guide them to your cargo hold to unload the modules. While they are working to unload them, Saed strikes up conversation on these 'modules' and you do your best to explain that they come from a species that compact many of their technologies into modules that they can install multiple of.`
+			`	After the engineers unload the modules, they run multiple scans on both pieces and begin to examine them as best they could without disassembling them. One of them makes their way to Saed after some time and says something to him that you can't understand. "Taking into account everything you have told us, and what we have found by examining it, we can offer you 918000 credits, is this an acceptable offer?"`
+			choice
+				`	"Yes, it is."`
+					accept
+				`	"I can't accept that."`
+					defer
+	priority
+	source
+		planet Nis
+	to offer
+		has "aben_contact: done"
+		not	"aben_retrieval_collector_module_small: offered"
+	on accept
+		outfit "Large Collector Module" -2
+		payment 918000
+		trust_aben += 2
+mission aben_retrieval_collector_module_small
+	invisible
+	minor
+	on offer
+		require "Small Collector Module"
+		conversation
+			`You remember being told that the Aben are interested in buying exotic technology. Would you like to offer them your collector modules?`
+			choice
+				`	(Not now.)`
+					defer
+				`	(Yes.)`
+			`	As soon as you step off your ship you are greeted by Saed and a scribe, "Greetings again, captain. Is there anything we are able to assist you with today?", you explain that you have some technology for offer and he motions to the engineers, while the rest carry on refueling your ship one walks up to Saed.`
+			`	Saed explains the situation to the engineer and he walks on back to his team which are now done refueling to explain to them the situation. They all walk on back and you guide them to your cargo hold to unload the modules. While they are working to unload them, Saed strikes up conversation on these 'modules' and you do your best to explain that they come from a species that compact many of their technologies into modules that they can install multiple of.`
+			`	After the engineers unload the modules, they run multiple scans on both pieces and begin to examine them as best they could without disassembling them. One of them makes their way to Saed after some time and says something to him that you can't understand. "Taking into account everything you have told us, and what we have found by examining it, we can offer you 607000 credits, is this an acceptable offer?"`
+			choice
+				`	"Yes, it is."`
+					accept
+				`	"I can't accept that."`
+					defer
+	source
+		planet Nis
+	to offer
+		has "aben_contact: done"
+		not	"aben_retrieval_collector_module_large: offered"
+	on accept
+		outfit "Small Collector Module" -2
+		payment 607000
+		trust_aben ++
+mission aben_retrieval_hai_shield_large
+	invisible
+	on offer
+		require "Hai Diamond Regenerator"
+		conversation
+			`You remember being told that the Aben are interested in buying exotic technology. Would you like to offer them your shield regenerators?`
+			choice
+				`	(Not now.)`
+					defer
+				`	(Yes.)`
+			`	As soon as you step off your ship you are greeted by Saed and a scribe, "Greetings again, captain. Is there anything we are able to assist you with today?", you explain that you have some technology for offer and he motions to the engineers, while the rest carry on refueling your ship one walks up to Saed.`
+			`	Saed explains the situation to the engineer and he walks on back to his team which are now done refueling to explain to them the situation. They all walk on back and you guide them to your cargo hold to unload the modules. While they are working to unload them, Saed strikes up conversation on these 'regenerators' and you do your best to explain that they work very efficiently at restoring shields because they work at modifying the shield matrix structure directly, because of this they generate abundant heat.`
+			`	After the engineers unload the regenerators, they run multiple scans on both pieces and begin to examine them as best they could without disassembling them. One of them makes their way to Saed after some time and says something to him that you can't understand. "Taking into account everything you have told us, and what we have found by examining it, we can offer you 2101000 credits, is this an acceptable offer?"`
+			choice
+				`	"Yes, it is."`
+					accept
+				`	"I can't accept that."`
+					defer
+	priority
+	source
+		planet Nis
+	to offer
+		has "aben_contact: done"
+		not	"aben_retrieval_hai_shield_small: offered"
+	on accept
+		outfit "Hai Diamond Regenerator" -2
+		payment 2101000
+		trust_aben += 2
+mission aben_retrieval_hai_shield_small
+	invisible
+	minor
+	on offer
+		require "Hai Corundum Regenerator"
+		conversation
+			`You remember being told that the Aben are interested in buying exotic technology. Would you like to offer them your shield regenerators?`
+			choice
+				`	(Not now.)`
+					defer
+				`	(Yes.)`
+			`	As soon as you step off your ship you are greeted by Saed and a scribe, "Greetings again, captain. Is there anything we are able to assist you with today?", you explain that you have some technology for offer and he motions to the engineers, while the rest carry on refueling your ship one walks up to Saed.`
+			`	Saed explains the situation to the engineer and he walks on back to his team which are now done refueling to explain to them the situation. They all walk on back and you guide them to your cargo hold to unload the modules. While they are working to unload them, Saed strikes up conversation on these 'regenerators' and you do your best to explain that they work very efficiently at restoring shields because they work at modifying the shield matrix structure directly, because of this they generate abundant heat.`
+			`	After the engineers unload the regenerators, they run multiple scans on both pieces and begin to examine them as best they could without disassembling them. One of them makes their way to Saed after some time and says something to him that you can't understand. "Taking into account everything you have told us, and what we have found by examining it, we can offer you 1490000 credits, is this an acceptable offer?"`
+			choice
+				`	"Yes, it is."`
+					accept
+				`	"I can't accept that."`
+					defer
+	source
+		planet Nis
+	to offer
+		has "aben_contact: done"
+		not	"aben_retrieval_hai_shield_large: offered"
+	on accept
+		outfit "Hai Corundum Regenerator" -2
+		payment 1490000
+		trust_aben ++
+mission aben_retrieval_heat_shunt_large
+	invisible
+	on offer
+		require "Large Heat Shunt"
+		conversation
+			`You remember being told that the Aben are interested in buying exotic technology. Would you like to offer them your heat shunts?`
+			choice
+				`	(Not now.)`
+					defer
+				`	(Yes.)`
+			`	As soon as you step off your ship you are greeted by Saed and a scribe, "Greetings again, captain. Is there anything we are able to assist you with today?", you explain that you have some technology for offer and he motions to the engineers, while the rest carry on refueling your ship one walks up to Saed.`
+			`	Saed explains the situation to the engineer and he walks on back to his team which are now done refueling to explain to them the situation. They all walk on back and you guide them to your cargo hold to unload the modules. Saed is obviously puzzled with what he's seeing, "This design is expert to be humble, yet the execution is rudimentary. Why is that?" "The aliens that these come from are extemely old, but they are under threat of extinction. Anything they create is likely a rushed attempt."`
+			`	After the engineers unload the shunts, they run multiple scans on both pieces and begin to examine them as best they could without disassembling them. One of them makes their way to Saed after some time and says something to him that you can't understand. "Taking into account everything you have told us, and what we have found by examining it, we can offer you 1274000 credits, is this an acceptable offer?"`
+			choice
+				`	"Yes, it is."`
+					accept
+				`	"I can't accept that."`
+					defer
+	priority
+	source
+		planet Nis
+	to offer
+		has "aben_contact: done"
+		not	"aben_retrieval_heat_shunt_small: offered"
+	on accept
+		outfit "Large Heat Shunt" -2
+		payment 1274000
+		trust_aben += 2
+mission aben_retrieval_heat_shunt_small
+	invisible
+	minor
+	on offer
+		require "Small Heat Shunt"
+		conversation
+			`You remember being told that the Aben are interested in buying exotic technology. Would you like to offer them your heat shunts?`
+			choice
+				`	(Not now.)`
+					defer
+				`	(Yes.)`
+			`	As soon as you step off your ship you are greeted by Saed and a scribe, "Greetings again, captain. Is there anything we are able to assist you with today?", you explain that you have some technology for offer and he motions to the engineers, while the rest carry on refueling your ship one walks up to Saed.`
+			`	Saed explains the situation to the engineer and he walks on back to his team which are now done refueling to explain to them the situation. They all walk on back and you guide them to your cargo hold to unload the modules. Saed is obviously puzzled with what he's seeing, "This design is expert to be humble, yet the execution is rudimentary. Why is that?" "The aliens that these come from are extemely old, but they are under threat of extinction. Anything they create is likely a rushed attempt."`
+			`	After the engineers unload the shunts, they run multiple scans on both pieces and begin to examine them as best they could without disassembling them. One of them makes their way to Saed after some time and says something to him that you can't understand. "Taking into account everything you have told us, and what we have found by examining it, we can offer you 978000 credits, is this an acceptable offer?"`
+			choice
+				`	"Yes, it is."`
+					accept
+				`	"I can't accept that."`
+					defer
+	source
+		planet Nis
+	to offer
+		has "aben_contact: done"
+		not	"aben_retrieval_heat_shunt_large: offered"
+	on accept
+		outfit "Small Heat Shunt" -2
+		payment 978000
+		trust_aben ++
+mission aben_retrieval_photovoltaic_large
+	invisible
+	on offer
+		require "KP-6 Photovoltaic Array"
+		conversation
+			`You remember being told that the Aben are interested in buying exotic technology. Would you like to offer them your solar panels?`
+			choice
+				`	(Not now.)`
+					defer
+				`	(Yes.)`
+			`	As soon as you step off your ship you are greeted by Saed and a scribe, "Greetings again, captain. Is there anything we are able to assist you with today?", you explain that you have some technology for offer and he motions to the engineers, while the rest carry on refueling your ship one walks up to Saed.`
+			`	Saed explains the situation to the engineer and he walks on back to his team which are now done refueling to explain to them the situation. They all walk on back and you guide them to your cargo hold to unload the modules. While they are working to unload them, Saed strikes up conversation on these 'panels' and you explain that they convert light energy into electrical energy, and that they are centuries old at least.`
+			`	After the engineers unload the panels, they run multiple scans on both pieces and begin to examine them as best they could without disassembling them. One of them makes their way to Saed after some time and says something to him that you can't understand. "Taking into account everything you have told us, and what we have found by examining it, we can offer you 904000 credits, is this an acceptable offer?"`
+			choice
+				`	"Yes, it is."`
+					accept
+				`	"I can't accept that."`
+					defer
+	priority
+	source
+		planet Nis
+	to offer
+		has "aben_contact: done"
+		not	"aben_retrieval_photovoltaic_small: offered"
+	on accept
+		outfit "KP-6 Photovoltaic Array" -2
+		payment 904000
+		trust_aben += 2
+mission aben_retrieval_photovoltaic_small
+	invisible
+	minor
+	on offer
+		require "KP-6 Photovoltaic Panel"
+		conversation
+			`You remember being told that the Aben are interested in buying exotic technology. Would you like to offer them your solar panels?`
+			choice
+				`	(Not now.)`
+					defer
+				`	(Yes.)`
+			`	As soon as you step off your ship you are greeted by Saed and a scribe, "Greetings again, captain. Is there anything we are able to assist you with today?", you explain that you have some technology for offer and he motions to the engineers, while the rest carry on refueling your ship one walks up to Saed.`
+			`	Saed explains the situation to the engineer and he walks on back to his team which are now done refueling to explain to them the situation. They all walk on back and you guide them to your cargo hold to unload the modules. While they are working to unload them, Saed strikes up conversation on these 'panels' and you explain that they convert light energy into electrical energy, and that they are centuries old at least.`
+			`	After the engineers unload the panels, they run multiple scans on both pieces and begin to examine them as best they could without disassembling them. One of them makes their way to Saed after some time and says something to him that you can't understand. "Taking into account everything you have told us, and what we have found by examining it, we can offer you 791000 credits, is this an acceptable offer?"`
+			choice
+				`	"Yes, it is."`
+					accept
+				`	"I can't accept that."`
+					defer
+	source
+		planet Nis
+	to offer
+		has "aben_contact: done"
+		not	"aben_retrieval_photovoltaic_large: offered"
+	on accept
+		outfit "KP-6 Photovoltaic Panel" -2
+		payment 791000
+		trust_aben ++
+mission aben_retrieval_repair_module_large
+	invisible
+	on offer
+		require "Large Repair Module"
+		conversation
+			`You remember being told that the Aben are interested in buying exotic technology. Would you like to offer them your repair modules?`
+			choice
+				`	(Not now.)`
+					defer
+				`	(Yes.)`
+			`	As soon as you step off your ship you are greeted by Saed and a scribe, "Greetings again, captain. Is there anything we are able to assist you with today?", you explain that you have some technology for offer and he motions to the engineers, while the rest carry on refueling your ship one walks up to Saed.`
+			`	Saed explains the situation to the engineer and he walks on back to his team which are now done refueling to explain to them the situation. They all walk on back and you guide them to your cargo hold to unload the modules. While they are working to unload them, Saed strikes up conversation on these 'modules' and you do your best to explain that they come from a species that compact many of their technologies into modules that they can install multiple of.`
+			`	After the engineers unload the modules, they run multiple scans on both pieces and begin to examine them as best they could without disassembling them. One of them makes their way to Saed after some time and says something to him that you can't understand. "Taking into account everything you have told us, and what we have found by examining it, we can offer you 2300000 credits, is this an acceptable offer?"`
+			choice
+				`	"Yes, it is."`
+					accept
+				`	"I can't accept that."`
+					defer
+	priority
+	source
+		planet Nis
+	to offer
+		has "aben_contact: done"
+		not	"aben_retrieval_repair_module_small: offered"
+	on accept
+		outfit "Large Repair Module" -2
+		payment 2300000
+		trust_aben += 2
+mission aben_retrieval_repair_module_small
+	invisible
+	minor
+	on offer
+		require "Small Repair Module"
+		conversation
+			`You remember being told that the Aben are interested in buying exotic technology. Would you like to offer them your repair modules?`
+			choice
+				`	(Not now.)`
+					defer
+				`	(Yes.)`
+			`	As soon as you step off your ship you are greeted by Saed and a scribe, "Greetings again, captain. Is there anything we are able to assist you with today?", you explain that you have some technology for offer and he motions to the engineers, while the rest carry on refueling your ship one walks up to Saed.`
+			`	Saed explains the situation to the engineer and he walks on back to his team which are now done refueling to explain to them the situation. They all walk on back and you guide them to your cargo hold to unload the modules. While they are working to unload them, Saed strikes up conversation on these 'modules' and you do your best to explain that they come from a species that compact many of their technologies into modules that they can install multiple of.`
+			`	After the engineers unload the modules, they run multiple scans on both pieces and begin to examine them as best they could without disassembling them. One of them makes their way to Saed after some time and says something to him that you can't understand. "Taking into account everything you have told us, and what we have found by examining it, we can offer you 1506000 credits, is this an acceptable offer?"`
+			choice
+				`	"Yes, it is."`
+					accept
+				`	"I can't accept that."`
+					defer
+	source
+		planet Nis
+	to offer
+		has "aben_contact: done"
+		not	"aben_retrieval_repair_module_large: offered"
+	on accept
+		outfit "Small Repair Module" -2
+		payment 1506000
+		trust_aben ++
+mission aben_retrieval_systems_core_large
+	invisible
+	on offer
+		require "Systems Core (Large)"
+		conversation
+			`You remember being told that the Aben are interested in buying exotic technology. Would you like to offer them your systems cores?`
+			choice
+				`	(Not now.)`
+					defer
+				`	(Yes.)`
+			`	As soon as you step off your ship you are greeted by Saed and a scribe, "Greetings again, captain. Is there anything we are able to assist you with today?", you explain that you have some technology for offer and he motions to the engineers, while the rest carry on refueling your ship one walks up to Saed.`
+			`	Saed explains the situation to the engineer and he walks on back to his team which are now done refueling to explain to them the situation. They all walk on back and you guide them to your cargo hold to unload the systems cores. While they are working to unload them, Saed asks you exactly what purpose these 'cores' serve and you explain to him the best you can, he asks many additional questions about the cores in the meantime.`
+			`	After the engineers unload the cores, they run multiple scans on both pieces and begin to examine them as best they could without disassembling them. One of them makes their way to Saed after some time and says something to him that you can't understand. "Taking into account everything you have told us, and what we have found by examining it, we can offer you 1940000 credits, is this an acceptable offer?"`
+			choice
+				`	"Yes, it is."`
+					accept
+				`	"I can't accept that."`
+					defer
+	priority
+	source
+		planet Nis
+	to offer
+		has "aben_contact: done"
+		not	"aben_retrieval_systems_core_small: offered"
+		not	"aben_retrieval_systems_core_medium: offered"
+	on accept
+		outfit "Systems Core (Large)" -2
+		payment 1940000
+		trust_aben += 2
+mission aben_retrieval_systems_core_medium
+	invisible
+	minor
+	on offer
+		require "Systems Core (Medium)"
+		conversation
+			`You remember being told that the Aben are interested in buying exotic technology. Would you like to offer them your systems cores?`
+			choice
+				`	(Not now.)`
+					defer
+				`	(Yes.)`
+			`	As soon as you step off your ship you are greeted by Saed and a scribe, "Greetings again, captain. Is there anything we are able to assist you with today?", you explain that you have some technology for offer and he motions to the engineers, while the rest carry on refueling your ship one walks up to Saed.`
+			`	Saed explains the situation to the engineer and he walks on back to his team which are now done refueling to explain to them the situation. They all walk on back and you guide them to your cargo hold to unload the systems cores. While they are working to unload them, Saed asks you exactly what purpose these 'cores' serve and you explain to him the best you can, he asks many additional questions about the cores in the meantime.`
+			`	After the engineers unload the cores, they run multiple scans on both pieces and begin to examine them as best they could without disassembling them. One of them makes their way to Saed after some time and says something to him that you can't understand. "Taking into account everything you have told us, and what we have found by examining it, we can offer you 1104000 credits, is this an acceptable offer?"`
+			choice
+				`	"Yes, it is."`
+					accept
+				`	"I can't accept that."`
+					defer
+	source
+		planet Nis
+	to offer
+		has "aben_contact: done"
+		not	"aben_retrieval_systems_core_small: offered"
+		not	"aben_retrieval_systems_core_large: offered"
+	on accept
+		outfit "Systems Core (Medium)" -2
+		payment 1104000
+		trust_aben += 2
+mission aben_retrieval_systems_core_small
+	invisible
+	minor
+	on offer
+		require "Systems Core (Small)"
+		conversation
+			`You remember being told that the Aben are interested in buying exotic technology. Would you like to offer them your systems cores?`
+			choice
+				`	(Not now.)`
+					defer
+				`	(Yes.)`
+			`	As soon as you step off your ship you are greeted by Saed and a scribe, "Greetings again, captain. Is there anything we are able to assist you with today?", you explain that you have some technology for offer and he motions to the engineers, while the rest carry on refueling your ship one walks up to Saed.`
+			`	Saed explains the situation to the engineer and he walks on back to his team which are now done refueling to explain to them the situation. They all walk on back and you guide them to your cargo hold to unload the systems cores. While they are working to unload them, Saed asks you exactly what purpose these 'cores' serve and you explain to him the best you can, he asks many additional questions about the cores in the meantime.`
+			`	After the engineers unload the cores, they run multiple scans on both pieces and begin to examine them as best they could without disassembling them. One of them makes their way to Saed after some time and says something to him that you can't understand. "Taking into account everything you have told us, and what we have found by examining it, we can offer you 706000 credits, is this an acceptable offer?"`
+			choice
+				`	"Yes, it is."`
+					accept
+				`	"I can't accept that."`
+					defer
+	source
+		planet Nis
+	to offer
+		has "aben_contact: done"
+		not "aben_retrieval_systems_core_medium: offered"
+		not	"aben_retrieval_systems_core_large: offered"
+	on accept
+		outfit "Systems Core (Small)" -2
+		payment 706000
+		trust_aben ++
+mission aben_retrieval_wanderer_shield_large
+	invisible
+	on offer
+		require "Dark Storm Shielding"
+		conversation
+			`You remember being told that the Aben are interested in buying exotic technology. Would you like to offer them your shield regenerators?`
+			choice
+				`	(Not now.)`
+					defer
+				`	(Yes.)`
+			`	As soon as you step off your ship you are greeted by Saed and a scribe, "Greetings again, captain. Is there anything we are able to assist you with today?", you explain that you have some technology for offer and he motions to the engineers, while the rest carry on refueling your ship one walks up to Saed.`
+			`	Saed explains the situation to the engineer and he walks on back to his team which are now done refueling to explain to them the situation. They all walk on back and you guide them to your cargo hold to unload the modules. While they are working to unload them, Saed strikes up conversation on these 'regenerators' and you do your best to explain that they seem to work so effectively by overcharging the matrix, but this consumes much more energy than any other shield regenerator of its size.`
+			`	After the engineers unload the shields, they run multiple scans on both pieces and begin to examine them as best they could without disassembling them. One of them makes their way to Saed after some time and says something to him that you can't understand. "Taking into account everything you have told us, and what we have found by examining it, we can offer you 2608000 credits, is this an acceptable offer?"`
+			choice
+				`	"Yes, it is."`
+					accept
+				`	"I can't accept that."`
+					defer
+	priority
+	source
+		planet Nis
+	to offer
+		has "aben_contact: done"
+		not	"aben_retrieval_wanderer_shield_small: offered"
+	on accept
+		outfit "Dark Storm Shielding" -2
+		payment 2608000
+		trust_aben += 2
+mission aben_retrieval_wanderer_shield_small
+	invisible
+	minor
+	on offer
+		require "Bright Cloud Shielding"
+		conversation
+			`You remember being told that the Aben are interested in buying exotic technology. Would you like to offer them your shield regenerators?`
+			choice
+				`	(Not now.)`
+					defer
+				`	(Yes.)`
+			`	As soon as you step off your ship you are greeted by Saed and a scribe, "Greetings again, captain. Is there anything we are able to assist you with today?", you explain that you have some technology for offer and he motions to the engineers, while the rest carry on refueling your ship one walks up to Saed.`
+			`	Saed explains the situation to the engineer and he walks on back to his team which are now done refueling to explain to them the situation. They all walk on back and you guide them to your cargo hold to unload the modules. While they are working to unload them, Saed strikes up conversation on these 'regenerators' and you do your best to explain that they seem to work so effectively by overcharging the matrix, but this consumes much more energy than any other shield regenerator of its size.`
+			`	After the engineers unload the shields, they run multiple scans on both pieces and begin to examine them as best they could without disassembling them. One of them makes their way to Saed after some time and says something to him that you can't understand. "Taking into account everything you have told us, and what we have found by examining it, we can offer you 1924000 credits, is this an acceptable offer?"`
+			choice
+				`	"Yes, it is."`
+					accept
+				`	"I can't accept that."`
+					defer
+	source
+		planet Nis
+	to offer
+		has "aben_contact: done"
+		not	"aben_retrieval_wanderer_shield_large: offered"
+	on accept
+		outfit "Bright Cloud Shielding" -2
+		payment 1924000
+		trust_aben ++
+mission aben_technology_advanced
+	invisible
+	landing
+	on offer
+		event aben_technology_advanced
+	source
+		planet Nis
+	to offer
+		has "aben_contact: done"
+		trust_aben > 17
+mission aben_technology_basic
+	invisible
+	landing
+	on offer
+		event aben_technology_basic
+	source
+		planet Nis
+	to offer
+		has "aben_contact: done"
+		trust_aben > 7
