@@ -1,4 +1,4 @@
-outfitter experimental
+outfitter "experimental"
 	"E-18 Distributor"
 	"G-76 Plant"
 	"G-82 Station"
