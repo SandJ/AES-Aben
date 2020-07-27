@@ -4,6 +4,8 @@
 
 outfit 'P-26 Screen'
 	category "Systems"
+		licenses
+			"Aben Technology"
 	cost 10270000
 	mass 13
 	"outfit space" -13
@@ -13,6 +15,8 @@ outfit 'P-26 Screen'
 	
 outfit 'P-72 Safeguard'
 	category "Systems"
+		licenses
+			"Aben Technology"
 	cost 26220000
 	mass 136
 	"outfit space" -136
@@ -26,6 +30,8 @@ outfit 'P-72 Safeguard'
 
 outfit 'E-18 Distributor'
 	category "Power"
+		licenses
+			"Aben Technology"
 	cost 9820000
 	mass 9
 	"outfit space" -9
@@ -33,6 +39,8 @@ outfit 'E-18 Distributor'
 	
 outfit 'G-76 Plant'
 	category "Power"
+		licenses
+			"Aben Technology"
 	cost 31780000
 	mass 38
 	"outfit space" -38
@@ -41,6 +49,8 @@ outfit 'G-76 Plant'
 
 outfit 'G-82 Station'
 	category "Power"
+		licenses
+			"Aben Technology"
 	cost 65200000
 	mass 91
 	"outfit space" -91
