@@ -1,5 +1,5 @@
 -------------
-# COALITION
+# COALITION #
 -------------
 
 mission 'aben retrieval battery module small'
@@ -177,7 +177,7 @@ mission 'aben retrieval repair module large'
 		"trust aben" += 2
 
 -------
-# HAI
+# HAI #
 -------
 
 mission 'aben retrieval hai shield small'
@@ -239,7 +239,7 @@ mission 'aben retrieval hai shield large'
 		"trust aben" += 2
 
 ---------
-# HUMAN
+# HUMAN #
 ---------
 
 mission 'aben retrieval photovoltaic small'
@@ -301,7 +301,7 @@ mission 'aben retrieval photovoltaic large'
 		"trust aben" += 2
 
 ----------
-# KORATH
+# KORATH #
 ----------
 
 mission 'aben retrieval heat shunt small'
@@ -453,7 +453,7 @@ mission 'aben retrieval systems core large'
 		"trust aben" += 2
 
 ------------
-# WANDERER
+# WANDERER #
 ------------
 
 mission 'aben retrieval wanderer shield small'

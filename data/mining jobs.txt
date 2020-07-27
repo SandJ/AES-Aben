@@ -1,5 +1,5 @@
 -----------
-# SILICON
+# SILICON #
 -----------
 
 mission 'aben mining silicon small'
@@ -37,7 +37,7 @@ mission 'aben mining silicon large'
 		"trust aben" ++
 
 --------
-# LEAD
+# LEAD #
 --------
 
 mission 'aben mining lead small'
@@ -75,7 +75,7 @@ mission 'aben mining lead large'
 		"trust aben" ++
 
 --------
-# IRON
+# IRON #
 --------
 
 mission 'aben mining iron small'
@@ -113,7 +113,7 @@ mission 'aben mining iron large'
 		"trust aben" ++
 
 ------------
-# ALUMINUM
+# ALUMINUM #
 ------------
 
 mission 'aben mining aluminum small'
@@ -151,7 +151,7 @@ mission 'aben mining aluminum large'
 		"trust aben" ++
 
 ----------
-# COPPER
+# COPPER #
 ----------
 
 mission 'aben mining copper small'
@@ -189,7 +189,7 @@ mission 'aben mining copper large'
 		"trust aben" ++
 
 ----------
-# SILVER
+# SILVER #
 ----------
 
 mission 'aben mining silver small'
@@ -227,7 +227,7 @@ mission 'aben mining silver large'
 		"trust aben" ++
 
 -----------
-# URANIUM
+# URANIUM #
 -----------
 
 mission 'aben mining uranium small'
@@ -265,7 +265,7 @@ mission 'aben mining uranium large'
 		"trust aben" ++
 
 ------------
-# PLATINUM
+# PLATINUM #
 ------------
 
 mission 'aben mining platinum small'

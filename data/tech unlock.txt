@@ -1,5 +1,5 @@
 ---------
-# BASIC
+# BASIC #
 ---------
 
 mission 'aben unlock basic'
@@ -19,7 +19,7 @@ event 'aben unlock basic'
 		outfitter "aben basic"
 
 ------------
-# ADVANCED
+# ADVANCED #
 ------------
 
 mission 'aben unlock advanced'

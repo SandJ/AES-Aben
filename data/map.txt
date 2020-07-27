@@ -1,5 +1,5 @@
 -------------
-# INHABITED
+# INHABITED #
 -------------
 
 system 'Dzee dzee-Bon,da'
@@ -106,7 +106,7 @@ system 'Ko,gok'
 			period 38
 
 -----------
-# PLANETS
+# PLANETS #
 -----------
 
 planet 'Nis'
@@ -124,7 +124,7 @@ planet 'Pesek'
 	spaceport `A looped broadcast confirms that the facility is not open to visitors, there is nothing to be done here but wait and refuel.`
 	
 ---------------
-# UNINHABITED
+# UNINHABITED #
 ---------------
 
 system 'Ahaw On,za'

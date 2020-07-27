@@ -1,5 +1,5 @@
 -----------
-# SYSTEMS
+# SYSTEMS #
 -----------
 
 outfit 'P-26 Screen'
@@ -25,7 +25,7 @@ outfit 'P-72 Safeguard'
 	"shield heat" 1.15
 
 ---------
-# POWER
+# POWER #
 ---------
 
 outfit 'E-18 Distributor'
@@ -58,7 +58,7 @@ outfit 'G-82 Station'
 	"heat generation" 69.5
 
 ---------
-# SALES
+# SALES #
 ---------
 
 outfitter 'aben basic'
@@ -71,7 +71,7 @@ outfitter 'aben advanced'
 	"P-72 Safeguard"
 
 ------------
-# OVERRIDE
+# OVERRIDE #
 ------------
 
 outfitter "experimental"
