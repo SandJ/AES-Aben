@@ -73,7 +73,6 @@ mission 'aben reconnaissance'
 			`	"Thank you greatly for your efforts, these Hai leave me optimistic of a future of peace but those soulless vessels on the other side of us worry me." you reassure him that those drones don't have the ability to travel beyond hyperspace links. He transfers to you a surprisingly large sum of <payment> and assures you that you're now cleared access to their technology.`
 		payment 2600000
 		"trust aben" += 5
-		set 'license: Aben Technology'
 
 --------
 # MISC

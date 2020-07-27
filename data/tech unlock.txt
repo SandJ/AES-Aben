@@ -11,6 +11,7 @@ mission 'aben unlock basic'
 	source
 		planet "Nis"
 	on offer
+		set 'license: Aben Technology'
 		event "aben unlock basic"
 
 event 'aben unlock basic'
