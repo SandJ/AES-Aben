@@ -2,7 +2,7 @@
 # INHABITED #
 -------------
 
-system 'Dzee dzee-Bon,da'
+system "Dzee dzee-Bon,da"
 	pos 130 -564
 	government "Aben"
 	link "Ahaw On,za"
@@ -57,7 +57,7 @@ system 'Dzee dzee-Bon,da'
 			distance 367
 			period 24
 
-system 'Ko,gok'
+system "Ko,gok"
 	pos 169 -552
 	government "Aben"
 	link "Ahaw On,za"
@@ -109,14 +109,14 @@ system 'Ko,gok'
 # PLANETS #
 -----------
 
-planet 'Nis'
+planet "Nis"
 	landscape land/forest0
 	description `Eerily, there are no winged creatures amongst the skies and few land roaming animals. Those animals that do walk the land however are large, lumbering beasts that easily dwarf small buildings. The most dominant species is noticeably creatures resembling old earth humans, they boast a very large build and move cautiously in groups.`
 	description `These humanesque creatures appear to have received aid as their technology is far beyond what they might have achieved otherwise. They prove quite formidable in the field of infrastructural and agricultural planning also, perhaps they have been aided in that respect also, the various towns and villages appear to have stood for many centuries.`
 	spaceport `The spaceport, located in the very center of a deep crater, shoots out of the ground like a glimmering silver spire. Surrounding the spire are densely populated residential and industrial sectors. The lower airspace of the city and lower levels of the spire are utilized for use by some form of flight capable vehicle, presumably for transit for the wealthy.`
 	spaceport `It appears as though only the very top regions of the spire are intended for foreigners to land, however there are docking bays located at various points around each docking level. Apparently only the most fortunate of Aben ever make it to the top of the spire, it's regarded as the highest honor to be of the few individuals to greet visiting species.`
 	
-planet 'Pesek'
+planet "Pesek"
 	landscape land/mountain2
 	description `A lifeless rock with a very thin atmosphere, slightly smaller than the Aben homeworld Nis. Somehow the Aben have managed to travel and colonise here, how they hold the power of spaceflight at their stage of evolution is astounding, even with the advanced technology they have been provided.`
 	description `The colonies sole purpose on this planet appears to be the research and development of the advanced technology they are given. With many flashes of light and booming sounds from off-site locations along the planets surface, the feel for the intensity of research is very intense.`
@@ -127,7 +127,7 @@ planet 'Pesek'
 # UNINHABITED #
 ---------------
 
-system 'Ahaw On,za'
+system "Ahaw On,za"
 	pos 137 -622
 	government "Uninhabited"
 	link "Dzee dzee-Bon,da"
@@ -170,7 +170,7 @@ system 'Ahaw On,za'
 			distance 631
 			period 78
 			
-system 'M,ska gwe,Demoos'
+system "M,ska gwe,Demoos"
 	pos 127 -516
 	government "Uninhabited"
 	link "Ko,gok"
@@ -222,7 +222,7 @@ system 'M,ska gwe,Demoos'
 			distance 536
 			period 36
 
-system 'Pak.zin Skwa'
+system "Pak.zin Skwa"
 	pos 78 -519
 	government "Uninhabited"
 	link "Ahaw On,za"
@@ -276,7 +276,7 @@ system 'Pak.zin Skwa'
 			distance 376
 			period 38
 
-system 'Tso-nii'
+system "Tso-nii"
 	pos 86 -467
 	government Uninhabited
 	link "M,ska gwe,Demoos"

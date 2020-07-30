@@ -2,7 +2,7 @@
 # SYSTEMS #
 -----------
 
-outfit 'P-26 Screen'
+outfit "P-26 Screen"
 	category "Systems"
 		licenses
 			"Aben Technology"
@@ -13,7 +13,7 @@ outfit 'P-26 Screen'
 	"shield energy" .39
 	"shield heat" .06
 	
-outfit 'P-72 Safeguard'
+outfit "P-72 Safeguard"
 	category "Systems"
 		licenses
 			"Aben Technology"
@@ -28,7 +28,7 @@ outfit 'P-72 Safeguard'
 # POWER #
 ---------
 
-outfit 'E-18 Distributor'
+outfit "E-18 Distributor"
 	category "Power"
 		licenses
 			"Aben Technology"
@@ -37,7 +37,7 @@ outfit 'E-18 Distributor'
 	"outfit space" -9
 	"energy capacity" 1825
 	
-outfit 'G-76 Plant'
+outfit "G-76 Plant"
 	category "Power"
 		licenses
 			"Aben Technology"
@@ -47,7 +47,7 @@ outfit 'G-76 Plant'
 	"energy generation" 6.35
 	"heat generation" 28
 
-outfit 'G-82 Station'
+outfit "G-82 Station"
 	category "Power"
 		licenses
 			"Aben Technology"

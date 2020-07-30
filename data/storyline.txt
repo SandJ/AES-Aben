@@ -2,7 +2,7 @@
 # FIRST CONTACT #
 -----------------
 
-mission 'aben first contact'
+mission "aben first contact"
 	invisible
 	landing
 	source
@@ -41,7 +41,7 @@ mission 'aben first contact'
 # RECON #
 ---------
 
-mission 'aben reconnaissance'
+mission "aben reconnaissance"
 	name `Aben Reconnaissance`
 	waypoint "Asikafarnut"
 	waypoint "Bore Fah"
@@ -78,7 +78,7 @@ mission 'aben reconnaissance'
 # MISC #
 --------
 
-mission 'aben bounty'
+mission "aben bounty"
 	name `Eliminate Assailant`
 	description `Stop an Unfettered Hai raid that is circling overhead <planet>, then return to <planet> to receive your payment of <payment>.`
 	job

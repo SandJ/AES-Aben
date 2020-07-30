@@ -2,7 +2,7 @@
 # COALITION #
 -------------
 
-mission 'aben retrieval battery module small'
+mission "aben retrieval battery module small"
 	invisible
 	minor
 	to offer
@@ -31,7 +31,7 @@ mission 'aben retrieval battery module small'
 		payment 512000
 		"trust aben" ++
 
-mission 'aben retrieval battery module large'
+mission "aben retrieval battery module large"
 	invisible
 	priority
 	to offer
@@ -60,7 +60,7 @@ mission 'aben retrieval battery module large'
 		payment 741000
 		"trust aben" += 2
 
-mission 'aben retrieval collector module small'
+mission "aben retrieval collector module small"
 	invisible
 	minor
 	to offer
@@ -89,7 +89,7 @@ mission 'aben retrieval collector module small'
 		payment 607000
 		"trust aben" ++
 
-mission 'aben retrieval collector module large'
+mission "aben retrieval collector module large"
 	invisible
 	priority
 	to offer
@@ -118,7 +118,7 @@ mission 'aben retrieval collector module large'
 		payment 918000
 		"trust aben" += 2
 
-mission 'aben retrieval repair module small'
+mission "aben retrieval repair module small"
 	invisible
 	minor
 	to offer
@@ -147,7 +147,7 @@ mission 'aben retrieval repair module small'
 		payment 1506000
 		"trust aben" ++
 
-mission 'aben retrieval repair module large'
+mission "aben retrieval repair module large"
 	invisible
 	priority
 	to offer
@@ -180,7 +180,7 @@ mission 'aben retrieval repair module large'
 # HAI #
 -------
 
-mission 'aben retrieval hai shield small'
+mission "aben retrieval hai shield small"
 	invisible
 	minor
 	to offer
@@ -209,7 +209,7 @@ mission 'aben retrieval hai shield small'
 		payment 1490000
 		"trust aben" ++
 
-mission 'aben retrieval hai shield large'
+mission "aben retrieval hai shield large"
 	invisible
 	priority
 	to offer
@@ -242,7 +242,7 @@ mission 'aben retrieval hai shield large'
 # HUMAN #
 ---------
 
-mission 'aben retrieval photovoltaic small'
+mission "aben retrieval photovoltaic small"
 	invisible
 	minor
 	to offer
@@ -271,7 +271,7 @@ mission 'aben retrieval photovoltaic small'
 		payment 791000
 		"trust aben" ++
 
-mission 'aben retrieval photovoltaic large'
+mission "aben retrieval photovoltaic large"
 	invisible
 	priority
 	to offer
@@ -304,7 +304,7 @@ mission 'aben retrieval photovoltaic large'
 # KORATH #
 ----------
 
-mission 'aben retrieval heat shunt small'
+mission "aben retrieval heat shunt small"
 	invisible
 	minor
 	to offer
@@ -333,7 +333,7 @@ mission 'aben retrieval heat shunt small'
 		payment 978000
 		"trust aben" ++
 
-mission 'aben retrieval heat shunt large'
+mission "aben retrieval heat shunt large"
 	invisible
 	priority
 	to offer
@@ -362,7 +362,7 @@ mission 'aben retrieval heat shunt large'
 		payment 1274000
 		"trust aben" += 2
 
-mission 'aben retrieval systems core small'
+mission "aben retrieval systems core small"
 	invisible
 	minor
 	to offer
@@ -392,7 +392,7 @@ mission 'aben retrieval systems core small'
 		payment 706000
 		"trust aben" ++
 
-mission 'aben retrieval systems core medium'
+mission "aben retrieval systems core medium"
 	invisible
 	minor
 	to offer
@@ -422,7 +422,7 @@ mission 'aben retrieval systems core medium'
 		payment 1104000
 		"trust aben" += 2
 
-mission 'aben retrieval systems core large'
+mission "aben retrieval systems core large"
 	invisible
 	priority
 	to offer
@@ -456,7 +456,7 @@ mission 'aben retrieval systems core large'
 # WANDERER #
 ------------
 
-mission 'aben retrieval wanderer shield small'
+mission "aben retrieval wanderer shield small"
 	invisible
 	minor
 	to offer
@@ -485,7 +485,7 @@ mission 'aben retrieval wanderer shield small'
 		payment 1924000
 		"trust aben" ++
 		
-mission 'aben retrieval wanderer shield large'
+mission "aben retrieval wanderer shield large"
 	invisible
 	priority
 	to offer

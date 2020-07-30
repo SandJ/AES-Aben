@@ -2,7 +2,7 @@
 # SILICON #
 -----------
 
-mission 'aben mining silicon small'
+mission "aben mining silicon small"
 	name `Harvest Silicon`
 	description `The Aben are offering <payment> in exchange for 60 tons of silicon.`
 	job
@@ -19,7 +19,7 @@ mission 'aben mining silicon small'
 		payment 60000
 		"trust aben" ++
 
-mission 'aben mining silicon large'
+mission "aben mining silicon large"
 	name `Harvest Silicon`
 	description `The Aben are offering <payment> in exchange for 90 tons of silicon.`
 	job
@@ -40,7 +40,7 @@ mission 'aben mining silicon large'
 # LEAD #
 --------
 
-mission 'aben mining lead small'
+mission "aben mining lead small"
 	name `Harvest Lead`
 	description `The Aben are offering <payment> in exchange for 60 tons of lead.`
 	job
@@ -57,7 +57,7 @@ mission 'aben mining lead small'
 		payment 90000
 		"trust aben" ++
 
-mission 'aben mining lead large'
+mission "aben mining lead large"
 	name `Harvest Lead`
 	description `The Aben are offering <payment> in exchange for 90 tons of lead.`
 	job
@@ -78,7 +78,7 @@ mission 'aben mining lead large'
 # IRON #
 --------
 
-mission 'aben mining iron small'
+mission "aben mining iron small"
 	name `Harvest Iron`
 	description `The Aben are offering <payment> in exchange for 60 tons of iron.`
 	job
@@ -95,7 +95,7 @@ mission 'aben mining iron small'
 		payment 105000
 		"trust aben" ++
 
-mission 'aben mining iron large'
+mission "aben mining iron large"
 	name `Harvest Iron`
 	description `The Aben are offering <payment> in exchange for 90 tons of iron.`
 	job
@@ -116,7 +116,7 @@ mission 'aben mining iron large'
 # ALUMINUM #
 ------------
 
-mission 'aben mining aluminum small'
+mission "aben mining aluminum small"
 	name `Harvest Aluminum`
 	description `The Aben are offering <payment> in exchange for 60 tons of aluminum.`
 	job
@@ -133,7 +133,7 @@ mission 'aben mining aluminum small'
 		payment 157500
 		"trust aben" ++
 		
-mission 'aben mining aluminum large'
+mission "aben mining aluminum large"
 	name `Harvest Aluminum`
 	description `The Aben are offering <payment> in exchange for 90 tons of aluminum.`
 	job
@@ -154,7 +154,7 @@ mission 'aben mining aluminum large'
 # COPPER #
 ----------
 
-mission 'aben mining copper small'
+mission "aben mining copper small"
 	name `Harvest Copper`
 	description `The Aben are offering <payment> in exchange for 60 tons of copper.`
 	job
@@ -171,7 +171,7 @@ mission 'aben mining copper small'
 		payment 262500
 		"trust aben" ++
 
-mission 'aben mining copper large'
+mission "aben mining copper large"
 	name `Harvest Copper`
 	description `The Aben are offering <payment> in exchange for 90 tons of copper.`
 	job
@@ -192,7 +192,7 @@ mission 'aben mining copper large'
 # SILVER #
 ----------
 
-mission 'aben mining silver small'
+mission "aben mining silver small"
 	name `Harvest Silver`
 	description `The Aben are offering <payment> in exchange for 60 tons of silver.`
 	job
@@ -209,7 +209,7 @@ mission 'aben mining silver small'
 		payment 450000
 		"trust aben" ++
 
-mission 'aben mining silver large'
+mission "aben mining silver large"
 	name `Harvest Silver`
 	description `The Aben are offering <payment> in exchange for 90 tons of silver.`
 	job
@@ -230,7 +230,7 @@ mission 'aben mining silver large'
 # URANIUM #
 -----------
 
-mission 'aben mining uranium small'
+mission "aben mining uranium small"
 	name `Harvest Uranium`
 	description `The Aben are offering <payment> in exchange for 60 tons of uranium.`
 	job
@@ -247,7 +247,7 @@ mission 'aben mining uranium small'
 		payment 750000
 		"trust aben" ++
 
-mission 'aben mining uranium large'
+mission "aben mining uranium large"
 	name `Harvest Uranium`
 	description `The Aben are offering <payment> in exchange for 90 tons of uranium.`
 	job
@@ -268,7 +268,7 @@ mission 'aben mining uranium large'
 # PLATINUM #
 ------------
 
-mission 'aben mining platinum small'
+mission "aben mining platinum small"
 	name `Harvest Platinum`
 	description `The Aben are offering <payment> in exchange for 60 tons of platinum.`
 	job
@@ -285,7 +285,7 @@ mission 'aben mining platinum small'
 		payment 1500000
 		"trust aben" ++
 
-mission 'aben mining platinum large'
+mission "aben mining platinum large"
 	name `Harvest Platinum`
 	description `The Aben are offering <payment> in exchange for 90 tons of platinum.`
 	job

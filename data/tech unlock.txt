@@ -2,7 +2,7 @@
 # BASIC #
 ---------
 
-mission 'aben unlock basic'
+mission "aben unlock basic"
 	invisible
 	landing
 	to offer
@@ -14,7 +14,7 @@ mission 'aben unlock basic'
 		set 'license: Aben Technology'
 		event "aben unlock basic"
 
-event 'aben unlock basic'
+event "aben unlock basic"
 	planet "Nis"
 		outfitter "aben basic"
 
@@ -22,7 +22,7 @@ event 'aben unlock basic'
 # ADVANCED #
 ------------
 
-mission 'aben unlock advanced'
+mission "aben unlock advanced"
 	invisible
 	landing
 	to offer
@@ -33,6 +33,6 @@ mission 'aben unlock advanced'
 	on offer
 		event "aben unlock advanced"
 
-event 'aben unlock advanced'
+event "aben unlock advanced"
 	planet "Nis"
 		outfitter "aben advanced"
