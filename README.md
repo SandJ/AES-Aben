@@ -1,2 +1,2 @@
 # Adde Aben
-> Any Adde content that doesn't fit in another or deserve it's own branch. This includes many new outfits and ships for various aspects of the vanilla game, even new missions here and there.
+> New aliens that are incapable of spaceflight as far as the player is concerned, offers the player multiple missions in aiding the Aben which also benefit the player in turn.
