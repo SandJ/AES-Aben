@@ -4,7 +4,7 @@
 
 system "Dzee dzee-Bon,da"
 	pos 130 -564
-	government "Aben"
+	government Aben
 	link "Ahaw On,za"
 	link "Ko,gok"
 	link "Pak.zin Skwa"
@@ -59,7 +59,7 @@ system "Dzee dzee-Bon,da"
 
 system "Ko,gok"
 	pos 169 -552
-	government "Aben"
+	government Aben
 	link "Ahaw On,za"
 	link "Dzee dzee-Bon,da"
 	link "M,ska gwe,Demoos"
@@ -129,7 +129,7 @@ planet "Pesek"
 
 system "Ahaw On,za"
 	pos 137 -622
-	government "Uninhabited"
+	government Uninhabited
 	link "Dzee dzee-Bon,da"
 	link "Ko,gok"
 	link "Pak.zin Skwa"
@@ -172,7 +172,7 @@ system "Ahaw On,za"
 			
 system "M,ska gwe,Demoos"
 	pos 127 -516
-	government "Uninhabited"
+	government Uninhabited
 	link "Ko,gok"
 	link "Pak.zin Skwa"
 	link "Tso-nii"
@@ -224,7 +224,7 @@ system "M,ska gwe,Demoos"
 
 system "Pak.zin Skwa"
 	pos 78 -519
-	government "Uninhabited"
+	government Uninhabited
 	link "Ahaw On,za"
 	link "Dzee dzee-Bon,da"
 	link "M,ska gwe,Demoos"
