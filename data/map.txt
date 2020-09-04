@@ -1,6 +1,6 @@
--------------
-# INHABITED #
--------------
+# -------------
+#   INHABITED
+# -------------
 
 system "Dzee dzee-Bon,da"
 	pos 130 -564
@@ -105,9 +105,9 @@ system "Ko,gok"
 			distance 519
 			period 38
 
------------
-# PLANETS #
------------
+# -----------
+#   PLANETS
+# -----------
 
 planet "Nis"
 	landscape land/forest0
@@ -123,9 +123,9 @@ planet "Pesek"
 	spaceport `The spaceport contains all of two landing pads, if it can even be called that, there is no area for pilots to gather and no shops in the local area, this is clearly meant only for supply deliveries to the colony.`
 	spaceport `A looped broadcast confirms that the facility is not open to visitors, there is nothing to be done here but wait and refuel.`
 	
----------------
-# UNINHABITED #
----------------
+# ---------------
+#   UNINHABITED
+# ---------------
 
 system "Ahaw On,za"
 	pos 137 -622

@@ -1,6 +1,6 @@
------------------
-# FIRST CONTACT #
------------------
+# -----------------
+#   FIRST CONTACT
+# -----------------
 
 mission "aben first contact"
 	invisible
@@ -37,9 +37,9 @@ mission "aben first contact"
 			`	He continues, rebounding back to his calm and predisposed manner of speaking; "Another kindness we allow is the freedom of choice. If you are not comfortable with the payment we offer you aren't made to accept it, you are free to decline the trade if you so wish." As he turns to walk away he hesitates, as if forgetting something important, "Oh of course I never told you my designation, I'm Saed, or at the very least it's the closest translation for humans." he then turns back and continues on his way out.`
 				accept
 
----------
-# RECON #
----------
+# ---------
+#   RECON
+# ---------
 
 mission "aben reconnaissance"
 	name `Aben Reconnaissance`
@@ -74,9 +74,9 @@ mission "aben reconnaissance"
 		payment 2600000
 		"trust aben" += 5
 
---------
-# MISC #
---------
+# --------
+#   MISC
+# --------
 
 mission "aben bounty"
 	name `Eliminate Assailant`

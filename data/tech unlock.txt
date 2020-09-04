@@ -1,6 +1,6 @@
----------
-# BASIC #
----------
+# ---------
+#   BASIC
+# ---------
 
 mission "aben unlock basic"
 	invisible
@@ -18,9 +18,9 @@ event "aben unlock basic"
 	planet "Nis"
 		outfitter "aben basic"
 
-------------
-# ADVANCED #
-------------
+# ------------
+#   ADVANCED
+# ------------
 
 mission "aben unlock advanced"
 	invisible

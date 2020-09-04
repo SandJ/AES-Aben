@@ -1,6 +1,6 @@
------------
-# SILICON #
------------
+# -----------
+#   SILICON
+# -----------
 
 mission "aben mining silicon small"
 	name `Harvest Silicon`
@@ -36,9 +36,9 @@ mission "aben mining silicon large"
 		payment 128000
 		"trust aben" ++
 
---------
-# LEAD #
---------
+# --------
+#   LEAD
+# --------
 
 mission "aben mining lead small"
 	name `Harvest Lead`
@@ -74,9 +74,9 @@ mission "aben mining lead large"
 		payment 189000
 		"trust aben" ++
 
---------
-# IRON #
---------
+# --------
+#   IRON
+# --------
 
 mission "aben mining iron small"
 	name `Harvest Iron`
@@ -112,9 +112,9 @@ mission "aben mining iron large"
 		payment 216000
 		"trust aben" ++
 
-------------
-# ALUMINUM #
-------------
+# ------------
+#   ALUMINUM
+# ------------
 
 mission "aben mining aluminum small"
 	name `Harvest Aluminum`
@@ -150,9 +150,9 @@ mission "aben mining aluminum large"
 		payment 324000
 		"trust aben" ++
 
-----------
-# COPPER #
-----------
+# ----------
+#   COPPER
+# ----------
 
 mission "aben mining copper small"
 	name `Harvest Copper`
@@ -188,9 +188,9 @@ mission "aben mining copper large"
 		payment 540000
 		"trust aben" ++
 
-----------
-# SILVER #
-----------
+# ----------
+#   SILVER
+# ----------
 
 mission "aben mining silver small"
 	name `Harvest Silver`
@@ -226,9 +226,9 @@ mission "aben mining silver large"
 		payment 960000
 		"trust aben" ++
 
------------
-# URANIUM #
------------
+# -----------
+#   URANIUM
+# -----------
 
 mission "aben mining uranium small"
 	name `Harvest Uranium`
@@ -264,9 +264,9 @@ mission "aben mining uranium large"
 		payment 1600000
 		"trust aben" ++
 
-------------
-# PLATINUM #
-------------
+# ------------
+#   PLATINUM
+# ------------
 
 mission "aben mining platinum small"
 	name `Harvest Platinum`

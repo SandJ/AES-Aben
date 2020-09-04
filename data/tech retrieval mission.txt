@@ -1,6 +1,6 @@
--------------
-# COALITION #
--------------
+# -------------
+#   COALITION
+# -------------
 
 mission "aben retrieval battery module small"
 	invisible
@@ -176,9 +176,9 @@ mission "aben retrieval repair module large"
 		payment 2300000
 		"trust aben" += 2
 
--------
-# HAI #
--------
+# -------
+#   HAI
+# -------
 
 mission "aben retrieval hai shield small"
 	invisible
@@ -238,9 +238,9 @@ mission "aben retrieval hai shield large"
 		payment 2101000
 		"trust aben" += 2
 
----------
-# HUMAN #
----------
+# ---------
+#   HUMAN
+# ---------
 
 mission "aben retrieval photovoltaic small"
 	invisible
@@ -300,9 +300,9 @@ mission "aben retrieval photovoltaic large"
 		payment 904000
 		"trust aben" += 2
 
-----------
-# KORATH #
-----------
+# ----------
+#   KORATH
+# ----------
 
 mission "aben retrieval heat shunt small"
 	invisible
@@ -452,9 +452,9 @@ mission "aben retrieval systems core large"
 		payment 1940000
 		"trust aben" += 2
 
-------------
-# WANDERER #
-------------
+# ------------
+#   WANDERER
+# ------------
 
 mission "aben retrieval wanderer shield small"
 	invisible
