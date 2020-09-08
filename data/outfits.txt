@@ -61,12 +61,12 @@ outfit "G-82 Station"
 #   SALES
 # ---------
 
-outfitter 'aben basic'
+outfitter "aben basic"
 	"E-18 Distributor"
 	"G-76 Plant"
 	"P-26 Screen"
 
-outfitter 'aben advanced'
+outfitter "aben advanced"
 	"G-82 Station"
 	"P-72 Safeguard"
 
