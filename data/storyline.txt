@@ -80,7 +80,7 @@ mission "aben reconnaissance"
 
 mission "aben bounty"
 	name `Eliminate Assailant`
-	description `Stop an Unfettered Hai raid that is circling overhead <planet>, then return to <planet> to receive your payment of <payment>.`
+	description `Stop an Unfettered Hai raid that is circling overhead, then return to <planet> to receive your payment of <payment>.`
 	job
 	repeat
 	to offer

@@ -70,9 +70,9 @@ outfitter "aben advanced"
 	"G-82 Station"
 	"P-72 Safeguard"
 
-# ------------
-#   OVERRIDE 
-# ------------
+# ----------------------------
+#   OVERRIDE SALES AES-OMNIS
+# ----------------------------
 
 outfitter "experimental"
 	"E-18 Distributor"
