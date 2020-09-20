@@ -12,6 +12,7 @@ outfit "P-26 Screen"
 	"shield generation" .37
 	"shield energy" .39
 	"shield heat" .06
+	description `A sophisticated piece of equipment which is utilized for protecting the Aben capital, this particular generator is put to use by shielding individual buildings, particularly large or more crucial buildings are allowed additional shielding generators. This small generator is used in conjunction with a much larger version, roughly ten times larger, which is capable of encompassing entire districts.`
 	
 outfit "P-72 Safeguard"
 	category "Systems"
