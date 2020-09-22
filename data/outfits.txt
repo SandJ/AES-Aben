@@ -48,7 +48,7 @@ outfit "G-76 Plant"
 	mass 38
 	"outfit space" -38
 	"energy generation" 6.35
-	"heat generation" 28
+	"heat generation" 14
 
 outfit "G-82 Station"
 	category "Power"
@@ -58,7 +58,7 @@ outfit "G-82 Station"
 	mass 91
 	"outfit space" -91
 	"energy generation" 18.5
-	"heat generation" 69.5
+	"heat generation" 34
 
 # ---------
 #   SALES
