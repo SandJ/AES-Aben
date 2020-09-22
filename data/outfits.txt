@@ -12,7 +12,7 @@ outfit "P-26 Screen"
 	"shield generation" .37
 	"shield energy" .39
 	"shield heat" .06
-	description `A sophisticated piece of equipment which is utilized for protecting the Aben capital, this particular generator is put to use by shielding individual buildings, particularly large or more crucial buildings are allowed additional shielding generators. This small generator is used in conjunction with a much larger version, roughly ten times larger, which is capable of encompassing entire districts.`
+	description `A sophisticated piece of equipment which is utilized for protecting the Aben capital, this particular regenerator is put to use by shielding individual buildings, particularly large or more crucial buildings are allowed additional shielding regenerators. This small generator is used in conjunction with a much larger version, roughly ten times larger, which is capable of encompassing entire districts.`
 	
 outfit "P-72 Safeguard"
 	category "Systems"
@@ -24,6 +24,8 @@ outfit "P-72 Safeguard"
 	"shield generation" 4.6
 	"shield energy" 5.35
 	"shield heat" 1.15
+	description `A much larger spin on the P-26 Screen, which is much more powerful at the cost of an even more expensive running cost. Often utilized in the precautionary service of shielding entire districts as the mainline defense against possible alien incursion into the capital.`
+	description `For a very hefty size, this shield regenerator can shield you from much of what any single ship can throw at you. For extended or more dire conflicts however, it may not be worth relying on to save you from the oncoming onslaught.`
 
 # ---------
 #   POWER
