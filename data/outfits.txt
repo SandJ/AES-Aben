@@ -50,6 +50,7 @@ outfit "G-76 Plant"
 	"outfit space" -38
 	"energy generation" 6.35
 	"heat generation" 14
+	description `A relatively feeble reactor used to complement the larger G-82 Station in any scenario. Often employed in pairs throughout the capital so as to take the burden off of the various E-18 Distributors in case of emergency, the output from each of these reactors are connected both to the electrical grid and the nearby district.`
 
 outfit "G-82 Station"
 	category "Power"
