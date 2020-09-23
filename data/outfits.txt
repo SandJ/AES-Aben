@@ -61,6 +61,7 @@ outfit "G-82 Station"
 	"outfit space" -91
 	"energy generation" 18.5
 	"heat generation" 34
+	description `The largest manufactured reactor by the Aben is the G-82 Station, designed to generate enough power to support a typical residential district in the capital on it's own. There are various locations where there are up to a half dozen of these Stations in a general proximity as a local supply for the city wide electrical grid. These locations are allowed up to three times the typical building allowance for P-26 Screens, as it doesn't need explaining why it's so important that these locations are adequately defended.`
 
 # ---------
 #   SALES
